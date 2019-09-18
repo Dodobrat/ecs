@@ -1,0 +1,277 @@
+/* GENERAL */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar-brand img {
+  height: 30px;
+  margin-top: -5px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline-color: transparent;
+}
+
+/* HOME*/
+
+.pimg {
+  background-image: url('../img/homefinal.jpeg');
+  min-height: 60vh;
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.bordered {
+  background-color: rgba(255, 50, 50, 0.4);
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
+  padding: 20px;
+}
+
+.section {
+  padding: 50px 10px;
+  text-align: center;
+  /* box-shadow: 0px -20px 30px 0px rgba(0,0,0,0.3); */
+}
+
+.web-description {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+/* HOME MAIL */
+
+/* .contact-us{
+    background-color: #eee;
+}
+.contact-us-title{
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-weight: 100;
+
+}
+.send{
+    padding: 50px 0;
+}
+.form-group{
+    padding: 5px 0;
+}
+.form-control{
+    border-radius: 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #00913d;
+    background-color: #f9f9f9;
+    transition: border 1s;
+}
+.form-control:focus{
+    background-color: #f1f1f1;
+    box-shadow: none;
+}
+textarea{
+    resize: none;
+    height: 150px;
+}
+.send-email-but{
+    border-radius: 0;
+    border:none;
+    background-color: #00913d;
+    width: 100%;
+}
+.send-email-but:hover{
+    background-color: #00813d;
+} */
+
+/* GALLERY */
+
+.gall-title {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 200;
+}
+
+.gall-desc {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#gall-row {
+  margin-top: 5vh;
+}
+
+.col-sm {
+  padding: 15px 15px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 0;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.card-img-top {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-img-top:hover{
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.card-text {
+  text-align: center;
+}
+
+.carousel-item {
+  max-height: 90vh;
+}
+
+/* PRIVACY */
+
+.privacy-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.privacy-text {
+  margin-top: 5vh;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.privacy {
+  color: #333;
+}
+
+.privacy:hover {
+  color: #111;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.foot-title {
+  font-weight: 200;
+}
+
+.footer p, .footer h3 {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#social-links {
+  text-align: center;
+  font-size: 25px;
+}
+
+#social-links1 {
+  text-align: left;
+  font-size: 25px;
+}
+
+.foot-social-link {
+  color: #777;
+  margin: 0 0;
+}
+
+.insta-link:hover {
+  color: #DF01A5;
+}
+
+.copy {
+  background-color: #d1d1d1;
+  color: #333;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* BACK TO TOP */
+
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 20px 25px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* RESPONSIVNESS */
+
+@media(max-width:768px) {
+  .pimg {
+    background-attachment: scroll;
+  }
+  .ptext {
+    top: 40%;
+    letter-spacing: 0px;
+    font-size: 21px;
+    background-color: rgba(255, 50, 50, 0.4);
+    padding: 10px 0px;
+  }
+  .bordered {
+    background-color: transparent;
+  }
+  .web-description {
+    font-size: 18px;
+  }
+  .modal-lg {
+    margin-top: 10vh;
+  }
+  #social-links {
+    text-align: right;
+  }
+}
